@@ -1,4 +1,5 @@
 // Problem: Two Sum
+// GFG: Similar → Key Pair / Find pair with given sum
 // Platform: LeetCode #1
 // Difficulty: Easy
 // Approach: HashMap (Optimized)
