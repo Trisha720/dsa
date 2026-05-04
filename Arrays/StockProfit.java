@@ -1,4 +1,5 @@
 // Problem: Best Time to Buy and Sell Stock
+// GFG: Stock Buy and Sell
 // Platform: LeetCode #121
 // Approach: Greedy
 // Idea: Track minimum price and calculate maximum profit
