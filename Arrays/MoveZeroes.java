@@ -1,4 +1,5 @@
 // Problem: Move Zeroes
+// GFG: Move all zeros to end
 // Platform: LeetCode #283
 // Approach: Two Pointers (In-place)
 // Idea: Move non-zero elements forward while maintaining order
