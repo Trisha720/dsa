@@ -1,0 +1,26 @@
+// Problem: Majority Element
+// Platform: LeetCode #169
+// GFG: Majority Element
+// Approach: Boyer-Moore Voting Algorithm
+// Idea: Cancel out non-majority elements
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+class Solution {
+    public int majorityElement(int[] nums) {
+        int count = 0;
+        int candidate = 0;
+
+        for(int num: nums){
+            if(count == 0){
+                candidate = num;
+            }
+            if(num == candidate){
+                count++;
+            }else{
+                count--;
+            }
+        }
+        return candidate;
+    }
+}
