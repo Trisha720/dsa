@@ -1,0 +1,26 @@
+// Problem: Subarray Sum Equals K
+// Platform: LeetCode #560
+// GFG: Subarray with given sum
+// Approach: Prefix Sum + HashMap
+// Idea: Check if (currentSum - k) exists
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+class Solution {
+    public int subarraySum(int[] nums, int k) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        map.put(0,1);
+
+        int sum = 0; //currentsum
+        int count = 0;
+        for(int num: nums){
+            sum += num;
+
+            if(map.containsKey(sum-k)){
+                count+= map.get(sum-k);
+            }
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
+        }
+        return count;
+    }
+}
